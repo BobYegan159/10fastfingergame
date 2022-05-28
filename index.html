@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Tapestry&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="gameText">
+            <span  id="text"></span>
+        </div>
+        <div class="innerKey">
+            <input type="text" onkeydown="Key(event)" id="readyWord" disabled>
+            <input type="button" value="Go!" onclick="start()" id="startBtn">
+        </div>
+    </div>
+    <div id="timer">
+
+    </div>
+
+    <div id="result">
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
