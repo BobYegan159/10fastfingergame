@@ -61,9 +61,10 @@ function nextWord(words){
 
 
 function start(){
-  fetch(link)
-    .then(response => response.json())
-    .then(response => wordArray(response))
+    // fetch(link)
+    //   .then(response => response.json())
+    //   .then(response => wordArray(response))
+    wordArray(stringARr[Math.round(Math.random()*(2-0)+0)]);
     document.getElementById("startBtn").setAttribute("disabled","")
     document.getElementById("result").innerHTML = ""
 }
@@ -80,3 +81,9 @@ function MPV(){
 }
 
 
+const stringARr = [
+  ["The milkman brought donuts, cheese (along with milk), and a bottle of whiskey to 10 houses."],
+  ["But what happens when the string begins or ends with a non-alphanumeric character"],
+  ["We are left with a string that begins and ends with whitespace that will appear in our array when we split it."]
+
+]
